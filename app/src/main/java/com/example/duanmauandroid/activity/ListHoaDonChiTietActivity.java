@@ -24,7 +24,7 @@ public class ListHoaDonChiTietActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_hoa_don_chi_tiet);
-        setTitle("HOÁ ĐƠN CHI TIẾT ");
+        setTitle("HOÁ ĐƠN CHI TIẾT");
         lvCart = (ListView) findViewById(R.id.lvCard);
         hoaDonChiTietDAO = new HoaDonChiTietDAO(ListHoaDonChiTietActivity.this);
         Intent in = getIntent();

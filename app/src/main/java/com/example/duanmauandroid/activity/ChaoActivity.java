@@ -22,6 +22,6 @@ public class ChaoActivity extends AppCompatActivity {
                 startActivity(new Intent(ChaoActivity.this, LoginActivity.class));
                 finish();
             }
-        }, 2000);
+        }, 2500);
     }
 }

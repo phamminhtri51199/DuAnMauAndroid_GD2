@@ -28,10 +28,7 @@ public class ThongKeActivity extends AppCompatActivity {
         tvNgay.setText("Hôm nay: " + hoaDonChiTietDAO.getDoanhThuTheoNgay());
         tvThang.setText("Tháng này: " + hoaDonChiTietDAO.getDoanhThuTheoThang());
         tvNam.setText("Năm này: " + hoaDonChiTietDAO.getDoanhThuTheoNam());
-
     }
-
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == android.R.id.home) {

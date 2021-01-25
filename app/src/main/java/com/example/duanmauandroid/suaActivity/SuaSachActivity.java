@@ -45,7 +45,7 @@ public class SuaSachActivity extends AppCompatActivity {
 
         Intent in = getIntent();
         Bundle b = in.getExtras();
-        maSach = b.getString("MASACH");
+        maSach = b.getString("MASACH" );
         tenSach = b.getString("TENSACH");
         tacGia = b.getString("TACGIA");
         NXB = b.getString("NXB");

@@ -9,7 +9,7 @@ public class DatePickerFragment extends DialogFragment {
 
     public DatePickerFragment() {
         Calendar c = Calendar.getInstance();
-        year = c.get(Calendar.YEAR);
+        year = c.get(Calendar.YEAR );
         month = c.get(Calendar.MONTH);
         day = c.get(Calendar.DAY_OF_MONTH);
     }

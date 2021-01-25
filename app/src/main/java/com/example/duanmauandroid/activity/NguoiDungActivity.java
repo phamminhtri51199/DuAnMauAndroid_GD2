@@ -34,7 +34,7 @@ public class NguoiDungActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("NGƯỜI DÙNG");
+        setTitle("NGƯỜI DÙNG ");
         setContentView(R.layout.activity_nguoi_dung);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

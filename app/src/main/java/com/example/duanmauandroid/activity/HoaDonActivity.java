@@ -47,7 +47,7 @@ public class HoaDonActivity extends AppCompatActivity {
         try {
             dsHoaDon = hoaDonDAO.getAllHoaDon();
         } catch (Exception e) {
-            Log.d("Error: ", e.toString());
+            Log.d("Lỗi: ", e.toString());
         }
         adapter = new HoaDonAdapter(this, dsHoaDon);
         lvHoaDon.setAdapter(adapter);

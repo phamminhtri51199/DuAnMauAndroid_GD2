@@ -38,7 +38,7 @@ public class SuaNguoiDungActivity extends AppCompatActivity {
     public void updateUser(View view) {
         if
         (nguoiDungDAO.updateInfoNguoiDung(username, edPhone.getText().toString(), edFullName.getText().toString()) > 0) {
-            Toast.makeText(getApplicationContext(), "Lưu thành công", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Lưu thành công!", Toast.LENGTH_SHORT).show();
         }
     }
 

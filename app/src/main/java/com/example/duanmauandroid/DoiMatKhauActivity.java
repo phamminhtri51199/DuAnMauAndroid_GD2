@@ -25,7 +25,7 @@ public class DoiMatKhauActivity extends AppCompatActivity {
         edRePass = (EditText) findViewById(R.id.edRePassword);
     }
 
-    public int validateForm() {
+    public int validateForm() { 
         int check = 1;
         if (edPass.getText().length() == 0 || edRePass.getText().length() == 0) {
             Toast.makeText(getApplicationContext(), "Bạn phải nhập đầy đủ thông tin",

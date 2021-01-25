@@ -37,7 +37,7 @@ public class SuaTheLoaiActivity extends AppCompatActivity {
         theLoaiDAO = new TheLoaiDAO(SuaTheLoaiActivity.this);
         Intent in = getIntent();
         Bundle b = in.getExtras();
-        maTheLoai = b.getString("MATHELOAI");
+        maTheLoai = b.getString("MATHELOAI" );
         tenTheLoai = b.getString("TENTHELOAI");
         moTa = b.getString("MOTA");
         viTri = b.getString("VITRI");

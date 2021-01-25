@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         strUser = edUserName.getText().toString();
         strPass = edPassword.getText().toString();
         if (strUser.isEmpty() || strPass.isEmpty()) {
-            Toast.makeText(getApplicationContext(), "Tên đăng nhập và mật khẩu không được bỏ trống",
+            Toast.makeText(getApplicationContext(), "Tên đăng nhập và mật khẩu không được bỏ trống!",
                     Toast.LENGTH_SHORT).show();
         } else {
 

@@ -38,7 +38,7 @@ public class SachBanChayActivity extends AppCompatActivity {
 
     public void VIEW_SACH_TOP_10(View view) {
         if (Integer.parseInt(edThang.getText().toString()) > 13 || Integer.parseInt(edThang.getText().toString()) < 0) {
-            Toast.makeText(getApplicationContext(), "Không đúng định dạng tháng (1- 12)", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Không đúng định dạng tháng(1- 12)", Toast.LENGTH_SHORT).show();
         } else {
             sachDAO = new SachDAO(SachBanChayActivity.this);
             dsSach = sachDAO.getSachTop10(edThang.getText().toString());

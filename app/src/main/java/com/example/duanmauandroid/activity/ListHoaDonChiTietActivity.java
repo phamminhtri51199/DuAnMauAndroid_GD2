@@ -19,6 +19,7 @@ public class ListHoaDonChiTietActivity extends AppCompatActivity {
     ListView lvCart;
     CartAdapter adapter = null;
     HoaDonChiTietDAO hoaDonChiTietDAO;
+    String a = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -14,7 +14,7 @@ public class ChaoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chao);
-        setTitle("QUẢN LÍ SÁCH");
+        setTitle("QUẢN LÍ SÁCH ");
 
         new Handler().postDelayed(new Runnable() {
             @Override

@@ -19,7 +19,7 @@ public class ThongKeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thong_ke);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle("DOANH THU");
+        setTitle("DOANH THU ");
 
         tvNgay = (TextView) findViewById(R.id.tvThongKeNgay);
         tvThang = (TextView) findViewById(R.id.tvThongKeThang);

@@ -31,7 +31,7 @@ public class SachBanChayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sach_ban_chay);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        setTitle("TOP 10 SÁCH BÁN CHẠY");
+        setTitle("TOP 10 SÁCH BÁN CHẠY ");
         lvBook = (ListView) findViewById(R.id.lvSachBanChay);
         edThang = (EditText) findViewById(R.id.edThang);
     }

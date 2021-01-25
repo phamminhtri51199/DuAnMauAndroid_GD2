@@ -39,7 +39,7 @@ public class SachActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("QUẢN LÝ SÁCH");
+        setTitle("QUẢN LÝ SÁCH ");
         setContentView(R.layout.activity_sach);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

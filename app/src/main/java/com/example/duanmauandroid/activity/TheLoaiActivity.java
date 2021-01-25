@@ -34,7 +34,7 @@ public class TheLoaiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("THỂ LOẠI");
+        setTitle("THỂ LOẠI ");
         setContentView(R.layout.activity_the_loai);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

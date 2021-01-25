@@ -46,10 +46,6 @@ public class SachActivity extends AppCompatActivity {
         lvBook = (ListView) findViewById(R.id.lvSach);
         sachDAO = new SachDAO(SachActivity.this);
         dsSach = sachDAO.getAllSach();
-        dsSach.add(new sach("123", "1234", "Sách 1", "Tác giả 1", "Nhi Đồng", 2, 3));
-        dsSach.add(new sach("1234", "1234", "Sách 2", "Tác giả 2", "Nhi Đồng", 3, 30));
-        dsSach.add(new sach("12345", "1234", "Sách 3", "Tác giả 3", "Nhi Đồng", 4, 300));
-        dsSach.add(new sach("123456", "1234", "Sách 4", "Tác giả 4", "Nhi Đồng", 5, 300));
         adapter = new SachAdapter(this, dsSach);
         lvBook.setAdapter(adapter);
 
@@ -89,6 +85,8 @@ public class SachActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        dsSach = sachDAO.getAllSach();
+        adapter.changeDataset(dsSach);
     }
 
     @Override
@@ -121,10 +119,10 @@ public class SachActivity extends AppCompatActivity {
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.suathongtin) {
-            Intent intent = new
-                    Intent(SachActivity.this, SuaSachActivity.class);
+            Intent intent = new Intent(SachActivity.this, SuaSachActivity.class);
             Bundle b = new Bundle();
             b.putString("MASACH", dsSach.get(index).getMaSach());
+            b.putString("MATHELOAI", dsSach.get(index).getMaTheLoai());
             b.putString("TENSACH", dsSach.get(index).getTenSach());
             b.putString("TACGIA", dsSach.get(index).getTacGia());
             b.putString("NXB", dsSach.get(index).getNXB());

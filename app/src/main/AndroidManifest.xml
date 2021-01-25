@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DuAnMauAndroid">
-        <activity android:name=".suaActivity.SuaSachActivity"></activity>
+        <activity android:name=".activity.ListHoaDonChiTietActivity"></activity>
+        <activity android:name=".themActivity.HoaDonChiTiet" />
+        <activity android:name=".suaActivity.SuaSachActivity" />
         <activity android:name=".suaActivity.SuaTheLoaiActivity" />
         <activity android:name=".suaActivity.SuaNguoiDungActivity" />
         <activity android:name=".activity.ChaoActivity">

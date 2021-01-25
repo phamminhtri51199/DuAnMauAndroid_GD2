@@ -18,10 +18,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Số điện thoại" />
+        android:text="Họ và tên" />
 
     <EditText
-        android:id="@+id/edSuaSoDienThoai"
+        android:id="@+id/edSuaTen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -29,10 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Họ và tên" />
+        android:text="Số điện thoại" />
 
     <EditText
-        android:id="@+id/edSuaTen"
+        android:id="@+id/edSuaSoDienThoai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

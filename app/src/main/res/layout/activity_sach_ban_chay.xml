@@ -13,11 +13,14 @@
         android:layout_height="wrap_content">
 
         <EditText
+            android:hint="Nhập tháng muốn tìm"
+            android:id="@+id/edThang"
             android:layout_width="230dp"
             android:layout_height="match_parent"
             android:layout_marginRight="20dp" />
 
         <Button
+            android:onClick="VIEW_SACH_TOP_10"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Tìm" />

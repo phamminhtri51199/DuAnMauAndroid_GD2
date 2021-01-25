@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+   android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMaSach1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã sách" />
+
+        <TextView
+            android:id="@+id/tvSoLuong1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng" />
+
+        <TextView
+            android:id="@+id/tvGiaBia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá bìa" />
+
+        <TextView
+            android:id="@+id/tvThanhTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thành tiền" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:src="@drawable/ic_close"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

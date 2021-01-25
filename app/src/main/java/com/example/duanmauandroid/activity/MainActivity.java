@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Quản lí sách");
         ibtnNguoiDung = findViewById(R.id.ibtnNguoiDung);
         ibtnTheLoai = findViewById(R.id.ibtnTheLoai);
         ibtnSach = findViewById(R.id.ibtnSach);

@@ -42,10 +42,6 @@ public class TheLoaiActivity extends AppCompatActivity {
         registerForContextMenu(lvTheLoai);
         theLoaiDAO = new TheLoaiDAO(TheLoaiActivity.this);
         dsTheLoai = theLoaiDAO.getAllTheLoai();
-        dsTheLoai.add(new theLoai("1", "Hoạt Hình", "Hài", 12));
-        dsTheLoai.add(new theLoai("2", "Trinh Thám", "Hay", 123));
-        dsTheLoai.add(new theLoai("3", "Ngôn tình", "Hay", 1234));
-        dsTheLoai.add(new theLoai("4", "Tiếu thuyết", "Hay", 12345));
         adapter = new TheLoaiAdapter(this, dsTheLoai);
         lvTheLoai.setAdapter(adapter);
 
@@ -62,9 +58,9 @@ public class TheLoaiActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-//        dsTheLoai.clear();
-//        dsTheLoai = theLoaiDAO.getAllTheLoai();
-//        adapter.changeDataset(dsTheLoai);
+        dsTheLoai.clear();
+        dsTheLoai = theLoaiDAO.getAllTheLoai();
+        adapter.changeDataset(dsTheLoai);
     }
 
     @Override

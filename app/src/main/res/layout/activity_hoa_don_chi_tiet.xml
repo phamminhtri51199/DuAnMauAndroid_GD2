@@ -6,56 +6,61 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp"
     android:orientation="vertical"
-    tools:context=".activity.LoginActivity">
+    tools:context=".themActivity.HoaDonChiTiet">
 
-    <ImageView
+    <EditText
+        android:id="@+id/edMaHoaDon1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã hóa đơn" />
+
+    <EditText
+        android:id="@+id/edMaSach1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:src="@drawable/logo" />
+        android:hint="Mã Sách" />
 
     <EditText
-        android:id="@+id/edUserName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Tên đăng nhập" />
-
-    <EditText
-        android:id="@+id/edPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:hint="Mật khẩu"
-        android:inputType="textPassword" />
-
-    <CheckBox
-        android:id="@+id/chkRememberPass"
+        android:id="@+id/edSoLuong1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Lưu mật khẩu?" />
+        android:hint="Số lượng mua" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
         <Button
-            android:onClick="checkLogin"
-            android:id="@+id/btnLogin"
+            android:onClick="ADDHoaDonCHITIET"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
-            android:text="Đăng nhập" />
+            android:text="Thêm" />
 
         <Button
-            android:onClick="out"
-            android:id="@+id/btnCancel"
+            android:onClick="thanhToanHoaDon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hủy" />
+            android:text="Thanh Toán" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvThanhTien1"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thành tiền:" />
+
+    <ListView
+        android:id="@+id/lvHoaDonChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
 
 </LinearLayout>

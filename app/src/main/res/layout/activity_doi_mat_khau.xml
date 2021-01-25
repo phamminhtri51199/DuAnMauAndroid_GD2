@@ -15,6 +15,7 @@
         android:src="@drawable/logo" />
 
     <EditText
+        android:id="@+id/edNewPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -23,6 +24,7 @@
         android:paddingLeft="10dp" />
 
     <EditText
+        android:id="@+id/edRePassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -31,6 +33,7 @@
         android:paddingLeft="10dp" />
 
     <Button
+        android:onClick="changePassword"
         android:id="@+id/btnLuuMatKhau"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

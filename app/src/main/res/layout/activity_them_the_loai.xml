@@ -15,6 +15,7 @@
         android:src="@drawable/logo" />
 
     <EditText
+        android:id="@+id/edMaTheLoai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -22,6 +23,7 @@
         android:paddingLeft="10dp" />
 
     <EditText
+        android:id="@+id/edTenTheLoai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -29,6 +31,7 @@
         android:paddingLeft="10dp" />
 
     <EditText
+        android:id="@+id/edViTri"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -36,6 +39,7 @@
         android:paddingLeft="10dp" />
 
     <EditText
+        android:id="@+id/edMoTa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -51,6 +55,7 @@
             android:id="@+id/btnLuuTheLoai"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
+            android:onClick="themTheLoai"
             android:text="Lưu" />
 
         <Button
@@ -58,6 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:onClick="huyTheLoai"
             android:text="Hủy" />
     </LinearLayout>
 
@@ -65,6 +71,7 @@
         android:id="@+id/btnDanhSachTheLoai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="xemTheLoai"
         android:text="Danh sách thể loại" />
 
 </LinearLayout>

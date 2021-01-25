@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import com.example.duanmauandroid.ModelClass.theLoai;
 import com.example.duanmauandroid.R;
+import com.example.duanmauandroid.activity.NguoiDungActivity;
+import com.example.duanmauandroid.activity.TheLoaiActivity;
 import com.example.duanmauandroid.database.DatabaseHelper;
 import com.example.duanmauandroid.database.NguoiDungDAO;
 import com.example.duanmauandroid.database.TheLoaiDAO;
@@ -32,6 +34,7 @@ public class SuaTheLoaiActivity extends AppCompatActivity {
         edTenTheLoai = findViewById(R.id.edSuaTenTheLoai);
         edMota = findViewById(R.id.edSuaMoTa);
         edViTri = findViewById(R.id.edSuaViTri);
+        theLoaiDAO = new TheLoaiDAO(SuaTheLoaiActivity.this);
         Intent in = getIntent();
         Bundle b = in.getExtras();
         maTheLoai = b.getString("MATHELOAI");
@@ -49,5 +52,8 @@ public class SuaTheLoaiActivity extends AppCompatActivity {
     }
 
     public void updateTheLoai(View view) {
+        if (theLoaiDAO.updateTheLoai(new theLoai(maTheLoai, edTenTheLoai.getText().toString(), edMota.getText().toString(), Integer.parseInt(edViTri.getText().toString()))) > 0) {
+            Toast.makeText(getApplicationContext(), "Lưu thành công", Toast.LENGTH_SHORT).show();
+        }
     }
 }

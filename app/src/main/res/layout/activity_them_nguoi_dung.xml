@@ -15,6 +15,7 @@
         android:src="@drawable/logo" />
 
     <EditText
+        android:id="@+id/edTenDangNhap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -22,6 +23,7 @@
         android:paddingLeft="10dp" />
 
     <EditText
+        android:id="@+id/edMatKhau"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -30,6 +32,7 @@
         android:paddingLeft="10dp" />
 
     <EditText
+        android:id="@+id/edNhacLaiMatKhau"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -38,6 +41,7 @@
         android:paddingLeft="10dp" />
 
     <EditText
+        android:id="@+id/edHoTen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -45,6 +49,7 @@
         android:paddingLeft="10dp" />
 
     <EditText
+        android:id="@+id/edSoDienThoai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -60,6 +65,7 @@
             android:id="@+id/btnLuuNguoiDung"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
+            android:onClick="addUser"
             android:text="Lưu" />
 
         <Button
@@ -67,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:onClick="huy"
             android:text="Hủy" />
     </LinearLayout>
 
@@ -74,5 +81,6 @@
         android:id="@+id/btnDanhSachNguoiDung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="showUsers"
         android:text="Danh sách người dùng" />
 </LinearLayout>

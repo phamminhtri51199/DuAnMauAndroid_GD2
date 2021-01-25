@@ -6,14 +6,15 @@ public class theLoai {
     private String moTa;
     private int viTri;
 
-    public theLoai() {
-    }
 
     public theLoai(String maTheLoai, String tenTheLoai, String moTa, int viTri) {
         this.maTheLoai = maTheLoai;
         this.tenTheLoai = tenTheLoai;
         this.moTa = moTa;
         this.viTri = viTri;
+    }
+
+    public theLoai() {
     }
 
     public String getMaTheLoai() {

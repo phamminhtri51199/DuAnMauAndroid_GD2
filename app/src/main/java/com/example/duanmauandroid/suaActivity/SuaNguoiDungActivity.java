@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.duanmauandroid.R;
+import com.example.duanmauandroid.activity.NguoiDungActivity;
 import com.example.duanmauandroid.database.NguoiDungDAO;
 
 public class SuaNguoiDungActivity extends AppCompatActivity {
@@ -34,13 +35,14 @@ public class SuaNguoiDungActivity extends AppCompatActivity {
         edPhone.setText(phone);
     }
 
-    public void updateUser(View view){
+    public void updateUser(View view) {
         if
-        (nguoiDungDAO.updateInfoNguoiDung(username,edPhone.getText().toString(),edFullName.getText().toString())>0){
-            Toast.makeText(getApplicationContext(),"Lưu thành công",Toast.LENGTH_SHORT).show();
+        (nguoiDungDAO.updateInfoNguoiDung(username, edPhone.getText().toString(), edFullName.getText().toString()) > 0) {
+            Toast.makeText(getApplicationContext(), "Lưu thành công", Toast.LENGTH_SHORT).show();
         }
     }
-    public void Huy(View view){
+
+    public void Huy(View view) {
         finish();
     }
 }

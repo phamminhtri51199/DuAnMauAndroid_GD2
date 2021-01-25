@@ -42,10 +42,6 @@ public class NguoiDungActivity extends AppCompatActivity {
         lvNguoiDung = findViewById(R.id.lvNguoiDung);
         nguoiDungDAO = new NguoiDungDAO(NguoiDungActivity.this);
         dsNguoiDung = nguoiDungDAO.getAllNguoiDung();
-        dsNguoiDung.add(new nguoiDung("phamminhtri", "123", "01232355234", "Minh Trí"));
-        dsNguoiDung.add(new nguoiDung("phamminhtri", "123", "02848294930", "Minh Hiếu"));
-        dsNguoiDung.add(new nguoiDung("phamminhtri", "123", "01233242344", "Minh Trung"));
-        dsNguoiDung.add(new nguoiDung("phamminhtri", "123", "01232342342", "Minh Hòa"));
         adapter = new NguoiDungAdapter(NguoiDungActivity.this, dsNguoiDung);
         lvNguoiDung.setAdapter(adapter);
 
@@ -61,13 +57,12 @@ public class NguoiDungActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     protected void onResume() {
         super.onResume();
-//        dsNguoiDung.clear();
-//        dsNguoiDung = nguoiDungDAO.getAllNguoiDung();
-//        adapter.changeDataset(nguoiDungDAO.getAllNguoiDung());
+        dsNguoiDung.clear();
+        dsNguoiDung = nguoiDungDAO.getAllNguoiDung();
+        adapter.changeDataset(dsNguoiDung);
     }
 
     @Override
@@ -89,6 +84,11 @@ public class NguoiDungActivity extends AppCompatActivity {
         }
         if (item.getItemId() == android.R.id.home) {
             onBackPressed();
+        }
+
+        if (item.getItemId() == R.id.dangXuat) {
+            Intent intent = new Intent(NguoiDungActivity.this, LoginActivity.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

@@ -9,6 +9,7 @@
     tools:context=".themActivity.ThemHoaDonActivity">
 
     <EditText
+        android:id="@+id/edMaHoaDon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Mã hóa đơn" />
@@ -20,18 +21,21 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/edNgayMua"
             android:layout_width="230dp"
             android:layout_height="match_parent"
             android:layout_marginRight="20dp"
             android:hint="Ngày (DD-MM-YYYY)" />
 
         <Button
+            android:onClick="datePicker"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Chọn" />
     </LinearLayout>
 
     <Button
+        android:onClick="ADDHoaDon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

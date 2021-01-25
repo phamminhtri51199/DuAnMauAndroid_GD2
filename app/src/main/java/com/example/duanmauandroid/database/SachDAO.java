@@ -184,4 +184,28 @@ public class SachDAO {
         c.close();
         return dsSach;
     }
+
+    public sach getSachByID(String maSach) {
+        sach s = null;
+        //WHERE clause
+        String selection = "masach=?";
+        //WHERE clause arguments
+        String[] selectionArgs = {maSach};
+        Cursor c = db.query(TABLE_NAME, null, selection, selectionArgs, null, null, null);
+        Log.d("getSachByID", "===>" + c.getCount());
+        c.moveToFirst();
+        while (c.isAfterLast() == false) {
+            s = new sach();
+            s.setMaSach(c.getString(0));
+            s.setMaTheLoai(c.getString(1));
+            s.setTenSach(c.getString(2));
+            s.setTacGia(c.getString(3));
+            s.setNXB(c.getString(4));
+            s.setGiaBia(c.getDouble(5));
+            s.setSoLuong(c.getInt(6));
+            break;
+        }
+        c.close();
+        return s;
+    }
 }
